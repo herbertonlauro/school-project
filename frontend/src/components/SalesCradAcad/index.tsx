@@ -1,5 +1,8 @@
 import NotificationButton from "../NotificationButton";
 import "./styles.css"
+
+import DatePicker from "react-datepicker";
+import "react-datepicker/dist/react-datepicker.css";
 function SalesCardAcad() {
 
     return (
@@ -8,10 +11,20 @@ function SalesCardAcad() {
                 <h2 className="acad-sales-title">Vendas</h2>
                 <div>
                     <div className="acad-form-control-container">
-                        <input className="acad-form-control" type="text" />
+                        <DatePicker
+                            selected={new Date()}
+                            onChange={(date: Date) => { }}
+                            className="acad-form-control"
+                            dateFormat="dd/MM/yyyy"
+                        />
                     </div>
                     <div className="acad-form-control-container">
-                        <input className="acad-form-control" type="text" />
+                        <DatePicker
+                            selected={new Date()}
+                            onChange={(date: Date) => { }}
+                            className="acad-form-control"
+                            dateFormat="dd/MM/yyyy"
+                        />
                     </div>
                 </div>
 
@@ -38,7 +51,7 @@ function SalesCardAcad() {
                                 <td>R$ 55300.00</td>
                                 <td>
                                     <div className="acad-red-btn-container">
-                                    <NotificationButton />
+                                        <NotificationButton />
                                     </div>
                                 </td>
                             </tr>
@@ -51,7 +64,7 @@ function SalesCardAcad() {
                                 <td>R$ 55300.00</td>
                                 <td>
                                     <div className="acad-red-btn-container">
-                                    <NotificationButton />
+                                        <NotificationButton />
                                     </div>
                                 </td>
                             </tr>
@@ -64,7 +77,7 @@ function SalesCardAcad() {
                                 <td>R$ 55300.00</td>
                                 <td>
                                     <div className="acad-red-btn-container">
-                                    <NotificationButton />
+                                        <NotificationButton />
                                     </div>
                                 </td>
                             </tr>
