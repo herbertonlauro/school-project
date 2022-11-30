@@ -1,17 +1,15 @@
-import logo from '../../assets/img/logo.svg';
-
-import'./styles.css';
-
+import logo from '../../assets/img/logo.svg'
+import './styles.css'
 function Header() {
     return (
 
         <header>
-            <div className="dsmeta-logo-container">
-                <img src={logo} alt="DSMeta" />
-                <h1>DSMeta</h1>
+            <div className="acad-logo-container">
+                <img src={logo} alt="Acad" />
+                <h1>Projeto Acad</h1>
                 <p>
                     Desenvolvido por
-                    <a href="https://instagram.com/devsuperior.ig"> @devsuperior.ig</a>
+                    <a href="https://www.herbertonlauro.com">@herberton.dev</a>
                 </p>
             </div>
         </header>
@@ -19,4 +17,4 @@ function Header() {
     )
 }
 
-export default Header;
+export default Header

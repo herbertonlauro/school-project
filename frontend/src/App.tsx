@@ -1,11 +1,18 @@
-import NotificationButton from "./components/NotificationButton"
+import Header from "./components/Header"
+import SalesCardAcad from "./components/SalesCradAcad"
+import "./index.css"
 
 function App() {
   return (
     <>
-      <h1>Olá Mundo!</h1>
-      <NotificationButton />
-      <NotificationButton />
+      <Header />
+      <main>
+      <section id="sales">
+        <div className="acad-container"></div>
+        <SalesCardAcad />
+        </section>
+        </main>
+      
     </>
   )
 }
