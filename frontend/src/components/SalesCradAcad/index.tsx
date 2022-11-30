@@ -1,27 +1,33 @@
 import NotificationButton from "../NotificationButton";
-import "./styles.css"
+import "./styles.css";
 
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
+import { useState } from "react";
 function SalesCardAcad() {
 
+    const min = new Date(new Date().setDate(new Date().getDate() - 30));
+    const max = new Date();
+    const [minDate,setMinDate] = useState(min);
+    const [maxDate,setMaxDate] = useState(max);
+
     return (
-        <>
+        
             <div className="acad-card">
                 <h2 className="acad-sales-title">Vendas</h2>
                 <div>
                     <div className="acad-form-control-container">
                         <DatePicker
-                            selected={new Date()}
-                            onChange={(date: Date) => { }}
+                            selected={minDate}
+                            onChange={(date: Date) => setMinDate(date)}
                             className="acad-form-control"
                             dateFormat="dd/MM/yyyy"
                         />
                     </div>
                     <div className="acad-form-control-container">
                         <DatePicker
-                            selected={new Date()}
-                            onChange={(date: Date) => { }}
+                            selected={maxDate}
+                            onChange={(date: Date) => setMaxDate(date)}
                             className="acad-form-control"
                             dateFormat="dd/MM/yyyy"
                         />
@@ -87,7 +93,7 @@ function SalesCardAcad() {
                 </div>
 
             </div>
-        </>
+         
     )
 
 }

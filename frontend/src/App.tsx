@@ -1,6 +1,6 @@
-import Header from "./components/Header"
-import SalesCardAcad from "./components/SalesCradAcad"
-import "./index.css"
+import Header from "./components/Header";
+import SalesCardAcad from "./components/SalesCradAcad";
+import "./index.css";
 
 function App() {
   return (
@@ -17,4 +17,4 @@ function App() {
   )
 }
 
-export default App
+export default App;
