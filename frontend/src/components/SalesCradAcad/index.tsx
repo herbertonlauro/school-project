@@ -76,7 +76,7 @@ function SalesCardAcad() {
                                     <td>R$ {venda.total.toFixed(2)}</td>
                                     <td>
                                         <div className="acad-red-btn-container">
-                                            <NotificationButton />
+                                            <NotificationButton vendasId={venda.id} />
                                         </div>
                                     </td>
                                 </tr>
