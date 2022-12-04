@@ -17,11 +17,15 @@ function SalesCardAcad() {
     const [vendas, setVendas] = useState<Vendas[]>([]);
 
     useEffect(() => {
-        axios.get(`${BASE_URL}/vendas`)
+
+            const datamin = minDate.toISOString().slice(0, 10);
+            const datamax = maxDate.toISOString().slice(0, 10);
+
+        axios.get(`${BASE_URL}/vendas?minDate=${datamin}&maxDate=${datamax}`)
             .then(response => {
                 setVendas(response.data.content)
             })
-    }, []);
+    }, [minDate, maxDate]);
 
 
     return (
