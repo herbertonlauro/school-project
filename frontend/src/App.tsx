@@ -11,8 +11,9 @@ function App() {
       <Header />
       <main>
       <section id="sales">
-        <div className="acad-container"></div>
+        <div className="acad-container">
         <SalesCardAcad />
+        </div>
         </section>
         </main>
       
